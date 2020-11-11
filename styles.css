@@ -1,0 +1,89 @@
+body {
+	background-image: url(https://derpicdn.net/img/2018/10/6/1849557/large.png), url("https://bigwall.ru/upload/iblock/94a/tormoznaya_pruzhina_dlya_tormoznoy_sistemy_trolleya_1_500x500.jpg");
+	background-position: right top, left top;
+	background-repeat: no-repeat, repeat;
+	background-attachment: fixed;
+}
+
+h1 {
+	text-align:center;
+	color:black; 
+	text-decoration:underline;
+}
+
+h2 {
+	text-align:center;
+	color:green;
+	margin:10px
+}
+
+a:link, a:visited{
+	color: deepPink;
+}
+
+a:hover{
+	color: slateBlue;
+}
+
+a:active{
+	color: yellow;
+}
+
+#button{
+#	padding: 10px;
+#}
+#
+#button:hover{
+#	background-color: slateBlue;
+#	color: white;
+#	padding: 10px;
+#}
+#
+#button:active{
+#	border: 5px solid black;
+#	background-clip: padding-box;
+#}
+
+div.relative {
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+	width: 600px;
+	height: 500px;
+	border: 5px solid hotPink;
+    border-radius: 25px;
+    background-color: AntiqueWhite;
+    background-clip: content-box;
+    box-shadow: 2px 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+div.absolute {
+	position: absolute;
+	top: 60px;
+	right: 10px;
+    border: 5px solid violet;
+	color:blue;
+	text-align:right;
+	padding:10px;
+	width: 30%;
+	height: 70%;
+}
+
+div.picture {
+	position: absolute;
+	top: 60px;
+	left: 20px;
+    border: 5px solid violet;
+	color:blue;
+	text-align:right;
+	padding:10px;
+	width: 50%;
+	height: 70%;
+}
+
+div.picture img{
+	width: 100%;
+	height: 100%;
+}
