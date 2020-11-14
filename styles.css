@@ -31,7 +31,6 @@ a:active{
 
 table {
 	float: left;
-	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 50px;
 	
@@ -86,15 +85,29 @@ section:active {
 	padding:10px;
 	width: 50%;
 	height: 70%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: all 0.5s ease;
 }
 
-.picture img{
-	width: 100%;
-	height: 100%;
-	transition: all 0.2s ease;
-	overflow: hidden;
+.picture:hover { 
+	/*transform: scale(1.05) translate3d(0px, 0px, 0px) rotate(0.1deg) translateZ(0px);*/
+	background-size: 300%; /*zoom effect*/
 }
 
-.picture img:hover { 
-	transform: scale(1.05) translate3d(0px, 0px, 0px) rotate(0.1deg) translateZ(0px);
+#img1 {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Springs_009.jpg/250px-Springs_009.jpg");
+}
+
+#img2 {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Ressort_de_compression.jpg/160px-Ressort_de_compression.jpg");
+}
+
+#img3 {
+	background-image: url("https://besttv232-ynet-images1-prod.cdn.it.best-tv.com/PicServer3/2012/07/15/4041524/404137501000100408612no.jpg");
+}
+
+#img4 {
+	background-image: url("https://img.apmcdn.org/768cb350c59023919f564341090e3eea4970388c/normal/5034f3-20180309-rick-astley.jpg");
 }
