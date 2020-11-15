@@ -1,8 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-image: url(https://derpicdn.net/img/2018/10/6/1849557/large.png), url("https://bigwall.ru/upload/iblock/94a/tormoznaya_pruzhina_dlya_tormoznoy_sistemy_trolleya_1_500x500.jpg");
 	background-position: right top, left top;
 	background-repeat: no-repeat, repeat;
 	background-attachment: fixed;
+	font-family: 'Assistant', 'Aclonica', sans-serif;
+	font-size: 22px;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.table {
+	align-self: flex-start;
 }
 
 h1 {
@@ -30,25 +47,31 @@ a:active{
 }
 
 table {
-	float: left;
-	position: sticky;
-	top: 50px;
-	
+	margin-right: 20px;
+	margin-bottom: 10px;
+	border-collapse: collapse;
 }
 
 th, td {
-	border: 3px solid black;
+	border: 3px solid #f5f5f5;
 	padding: 10px;
-	width: 300px;
+	width: 200px;
 	height: 50px;
+	text-align: center;
 }
 
+tr {
+	background-color: white;
+}
 
+tr:hover, tr:nth-child(odd):hover {
+	background-color: hotPink;
+}
+
+tr:nth-child(odd) {background-color: #ebedef;}
 
 section {
 	position: relative;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 30px;
 	width: 600px;
 	height: 500px;
@@ -71,8 +94,9 @@ section:active {
 	color:blue;
 	text-align:right;
 	padding:10px;
-	width: 30%;
+	width: 40%;
 	height: 70%;
+	overflow: auto;
 }
 
 .picture {
@@ -88,12 +112,23 @@ section:active {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	transition: all 0.5s ease;
+	/*transition: all 0.5s linear;*/
 }
 
 .picture:hover { 
 	/*transform: scale(1.05) translate3d(0px, 0px, 0px) rotate(0.1deg) translateZ(0px);*/
-	background-size: 300%; /*zoom effect*/
+	/*background-size: 300%; /*zoom effect*/
+	animation-name: zoom;
+	animation-duration: 1s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+	0% {background-size: cover;}
+	25% {background-size: 150;}
+	50% {background-size: 200;}
+	75% {background-size: 250;}
+	100% {background-size: 300%;}
 }
 
 #img1 {
