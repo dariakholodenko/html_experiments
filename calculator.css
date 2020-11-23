@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+	background-image: url('https://www.pngkey.com/png/full/1-15550_clouds-pixel-clouds-transparent.png'), 
+					  linear-gradient(#0a2351, #0a2351);
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: 50% 130%;
+	background-blend-mode: normal;
+	font-family: 'Big Shoulders Stencil Display', cursive;
+	font-size: xx-large;
+}
+
+h2, label {
+	color: white;
+}
+
+.img {
+	width: 20%;
+	height: 30%;
+	background-image: linear-gradient(#0a2351, #0a2351), url('https://image.shutterstock.com/image-illustration/cute-linear-hand-drawn-arrow-260nw-1448060795.jpg');
+	background-blend-mode: lighten;
+	background-position: right;
+}
+
+input {
+	width: 100%;
+	padding: 5px;
+	margin-top: 5px;
+	background-color: transparent;
+	color: #fff;
+	border: none;
+	border-bottom: 2px solid #03122b;
+	
+	outline: none;
+	transition:  0.5s;
+	text-align: center;
+}
+
+input:focus {
+	box-shadow: 2px 0px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+	height: 500px;
+	border-top: 3px dashed white;
+	padding-top: 50px;
+	margin-top: 100px;
+	position: relative;
+}
+
+.column {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	width: 30%;
+	height: 100%;
+	align-self: center;
+	background-color: #0a2351;
+	box-shadow: 15px 15px 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition:  0.5s;
+}
+
+.column:hover {
+	background-color: #071a3d;
+}
+
+#c1 {
+	margin-right: 5%;
+}
+
+#c2 {
+	margin-left: 5%;
+}
