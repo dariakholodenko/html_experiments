@@ -33,3 +33,12 @@ function tenToTwo(num) {
 	
 	return ret;
 }
+
+$('#bin').on('keypress', function (event) {
+    var regex = new RegExp("^[0-1]+$");
+    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+    if (!regex.test(key)) {
+       event.preventDefault();
+       return false;
+    }
+});

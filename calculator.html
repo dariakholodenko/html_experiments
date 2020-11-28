@@ -16,17 +16,21 @@
 		<h2>Binary Decimal Converter</h2>
 			
 		<div class="row">
-			<div class="column" id="c1">
+			<div class="column content" id="col_left">
 				<form>
 					<label for="bin">Binary number:</label><br>
-					<input type="text" id="bin" name="bin" min="0" placeholder="0" value="0"
+					<input type="text" id="bin" name="bin" pattern="[0-1]" min="0" placeholder="0" value="0"
 					oninput="convertBD()"><br>
 				</form>
 			</div>
 			
-			<div class="img"></div>
+			<div class="column" id="col_phony">
+				<div class="img" id="flip"></div>
+				<div class="img"></div>
+			</div>
 			
-			<div class="column" id="c2">
+			
+			<div class="column content" id="col_right">
 				<form>
 					<label for="dec">Decimal number:</label><br>
 					<input type="text" id="dec" name="dec" min="0" placeholder="0" value="0"
