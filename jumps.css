@@ -3,19 +3,14 @@
 }
 
 body {
-	background-image: url(https://derpicdn.net/img/2018/10/6/1849557/large.png), url("https://bigwall.ru/upload/iblock/94a/tormoznaya_pruzhina_dlya_tormoznoy_sistemy_trolleya_1_500x500.jpg");
-	background-position: right top, left top;
+	background-image: url(https://derpicdn.net/img/2018/10/6/1849557/large.png),
+	 url("https://bigwall.ru/upload/iblock/94a/tormoznaya_pruzhina_dlya_tormoznoy_sistemy_trolleya_1_500x500.jpg");
+	background-position: left top, left bottom;
 	background-repeat: no-repeat, repeat;
 	background-attachment: fixed;
+	background-size: 50 px 50 px, auto;
 	font-family: 'Assistant', 'Aclonica', sans-serif;
-	font-size: 22px;
-}
-
-.wrapper {
-	display: flex;
-	flex-flow: wrap;
-	align-items: center;
-	justify-content: center;
+	font-size: 19px;
 }
 
 .table {
@@ -47,7 +42,7 @@ a:active{
 }
 
 table {
-	margin-right: 20px;
+	margin-left: 10%;
 	margin-bottom: 10px;
 	border-collapse: collapse;
 }
@@ -69,6 +64,13 @@ tr:hover, tr:nth-child(odd):hover {
 }
 
 tr:nth-child(odd) {background-color: #ebedef;}
+
+.wrapper {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+}
 
 section {
 	position: relative;
@@ -112,12 +114,9 @@ section:active {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	/*transition: all 0.5s linear;*/
 }
 
 .picture:hover { 
-	/*transform: scale(1.05) translate3d(0px, 0px, 0px) rotate(0.1deg) translateZ(0px);*/
-	/*background-size: 300%; /*zoom effect*/
 	animation-name: zoom;
 	animation-duration: 1s linear;
 	animation-fill-mode: forwards;
