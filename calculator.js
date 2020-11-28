@@ -1,16 +1,16 @@
 function convertBD() {
-	var bin = document.getElementById("bin").value;
-	document.getElementById("dec").value = twoTOten(bin);
+	let bin = document.querySelector("#bin").value;
+	document.querySelector("#dec").value = twoTOten(bin);
 }
 
 function convertDB() {	
-	var dec = document.getElementById("dec").value;
-	document.getElementById("bin").value = tenToTwo(dec);
+	let dec = document.querySelector("#dec").value;
+	document.querySelector("#bin").value = tenToTwo(dec);
 }
 
 function twoTOten(num) {
-	var ret = 0;
-	var cnt = 1;
+	let ret = 0;
+	let cnt = 1;
 	
 	while(num >= 1) {
 		ret += cnt*(num % 10);
@@ -22,8 +22,8 @@ function twoTOten(num) {
 }
 
 function tenToTwo(num) {
-	var ret = 0;
-	var cnt = 1;
+	let ret = 0;
+	let cnt = 1;
 	
 	while(num >= 1) 	{
 		ret += cnt*(num%2);
@@ -35,8 +35,8 @@ function tenToTwo(num) {
 }
 
 $('#bin').on('keypress', function (event) {
-    var regex = new RegExp("^[0-1]+$");
-    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+    let regex = new RegExp("^[0-1]+$");
+    let key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
     if (!regex.test(key)) {
        event.preventDefault();
        return false;
